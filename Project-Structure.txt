@@ -1,0 +1,59 @@
+# ShikshaAI Project Blueprint
+
+## 1. Vision & Core Logic
+- Left Panel: "Tina" AI Tutor Avatar Studio. Handles multilingual input and audio responses (English, Hindi, Telugu). 
+Includes smooth idle, thinking, and speaking visual animations.
+- Right Panel: Dynamic Visual Knowledge Panel. Renders structured markdown explanations, key points, related Pexels images,
+ facts, and comparison tables strictly in English to build technical comprehension.
+
+
+
+ai-learning-assistant/
+
+│
+├── frontend/
+│   │
+│   ├── app/
+│   │     ├── page.jsx
+│   │     ├── layout.jsx
+│   │     └── globals.css
+│   │
+│   ├── components/
+│   │     ├── Avatar.jsx
+│   │     ├── ChatBox.jsx
+│   │     ├── VisualPanel.jsx
+│   │     └── VoiceInput.jsx
+│   │
+│   ├── hooks/
+│   │     ├── useAvatar.js
+│   │     └── useSpeech.js
+│   │
+│   ├── services/
+│   │     └── api.js
+│   │
+│   ├── public/
+│   │     └── favicon.ico
+│   │
+│   ├── package.json
+│   ├── next.config.js
+│   ├── tailwind.config.js
+│   ├── postcss.config.js
+│   └── .env.local
+│
+├── backend/
+│   │
+│   ├── main.py
+│   ├── schemas.py
+│   ├── ai_service.py
+│   ├── speech_service.py
+│   ├── image_service.py
+│   ├── prompts.py
+│   ├── requirements.txt
+│   ├── .env.example
+│   └── .env
+│
+├── Dockerfile
+├── entrypoint.sh
+├── README.md
+├── .gitignore
+└── docker-compose.yml   (Optional for local development)

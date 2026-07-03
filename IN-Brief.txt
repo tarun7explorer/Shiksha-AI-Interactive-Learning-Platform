@@ -1,0 +1,24 @@
+Minimal Tech Stack
+
+Frontend: React.js + Next.js + Tailwind CSS + Framer Motion + Axios
+Backend: FastAPI (Python)
+AI: Gemini 2.5 Flash API
+Speech Recognition: Web Speech API
+Speech Synthesis: Azure AI Speech
+Avatar: HeyGen Streaming Avatar API (or D-ID)
+Images: Pexels API
+Deployment: Hugging Face Spaces (Docker)
+
+
+AI-Powered Interactive Learning & Visual Knowledge Assistant
+Project Brief
+
+The AI-Powered Interactive Learning & Visual Knowledge Assistant is an intelligent educational web application designed to make 
+learning more engaging through conversational AI, voice interaction, and real-time visual content. Users can ask questions using 
+either text or voice, and the system responds through a realistic AI avatar that speaks naturally in English, Hindi, or Telugu 
+while maintaining conversational context. Simultaneously, the right side of the interface presents structured learning content in 
+English, including concise explanations, key points, high-quality images, examples, comparison tables, and interesting facts. 
+By combining Large Language Models (LLMs), speech technologies, AI avatars, and image retrieval APIs, the platform creates an 
+immersive learning experience that goes beyond traditional chatbots. This MVP focuses on delivering a clean, responsive, and 
+visually engaging prototype without user authentication or databases, making it lightweight, easy to deploy, and ideal for 
+demonstrations, portfolios and future expansion.

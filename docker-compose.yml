@@ -1,0 +1,36 @@
+version: "3.9"
+
+# Local development / staging orchestration for ShikshaAI.
+# Mirrors the production single-container target (e.g. Hugging Face
+# Spaces) — Next.js and FastAPI run together in one image, with only
+# the frontend's port exposed to the host.
+
+services:
+  shiksha-ai:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: shiksha-ai:latest
+    container_name: shiksha-ai
+    restart: unless-stopped
+    ports:
+      - "${HOST_PORT:-7860}:7860"
+    environment:
+      PORT: 7860
+      BACKEND_PORT: 8000
+      BACKEND_INTERNAL_URL: http://localhost:8000
+      NODE_ENV: production
+    env_file:
+      - ./backend/.env
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:7860/"]
+      interval: 30s
+      timeout: 5s
+      start_period: 25s
+      retries: 3
+    networks:
+      - shiksha-net
+
+networks:
+  shiksha-net:
+    driver: bridge
