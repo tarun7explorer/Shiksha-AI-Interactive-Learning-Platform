@@ -1,3 +1,12 @@
+---
+title: ShikshaAI-Interactive-Platform
+emoji: 🎓
+colorFrom: purple
+colorTo: indigo
+sdk: docker
+pinned: false
+---
+
 # **ShikshaAI**
 
 ### **India's AI-Powered Learning Ecosystem**
