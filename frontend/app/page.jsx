@@ -53,6 +53,11 @@ export default function Home() {
     async (questionText) => {
       if (!questionText || !questionText.trim()) return;
 
+      // Must run synchronously, before any `await`, so iOS Safari still
+      // counts this call chain as tied to the user's tap/click and allows
+      // the narration audio further down to actually play.
+      speech.primeAudioPlayback();
+
       setErrorMessage(null);
       setIsThinking(true);
       avatar.setThinking();
@@ -116,7 +121,7 @@ export default function Home() {
   }, [speech, avatar, activeLanguage]);
 
   return (
-    <div className="flex h-screen w-full flex-col overflow-hidden">
+    <div className="flex h-[100dvh] w-full flex-col overflow-hidden">
       {/* ---------------------------------- */}
       {/* Premium Top Navbar                  */}
       {/* ---------------------------------- */}
