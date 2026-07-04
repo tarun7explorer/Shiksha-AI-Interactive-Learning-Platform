@@ -32,17 +32,17 @@ RUN pip wheel --no-cache-dir --wheel-dir /app/backend/wheels -r requirements.txt
 # ===================================================================== #
 # Stage 3 — Production runtime
 # Single container running both Uvicorn (FastAPI, port 8000) and the
-# Next.js standalone server (port 7860 — the conventional Hugging Face
-# Spaces Docker port). Next.js proxies /api/* to the FastAPI process
-# internally via next.config.js rewrites, so only one port is exposed.
+# Next.js standalone server (port 7860).
 # ===================================================================== #
 FROM python:3.11-slim AS production
 
+# Grouping all Environment Variables together
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
     NEXT_TELEMETRY_DISABLED=1 \
     NODE_ENV=production \
     PORT=7860 \
+    HOST=0.0.0.0 \
     BACKEND_PORT=8000 \
     BACKEND_INTERNAL_URL=http://localhost:8000
 
