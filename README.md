@@ -11,6 +11,8 @@ pinned: false
 
 ### **India's AI-Powered Learning Ecosystem**
 
+Live Link - [https://tarun2525tej-shikshaai-interactive-platform.hf.space]
+
 **ShikshaAI** is an AI-powered interactive learning platform designed to transform the way students and lifelong learners acquire knowledge through intelligent conversations, immersive visual content, and multilingual voice interaction. Built as a modern educational ecosystem, ShikshaAI combines the capabilities of Large Language Models (LLMs), speech technologies, AI avatars, and real-time visual knowledge presentation to deliver a highly engaging and personalized learning experience. The platform enables users to ask questions naturally using either text or voice across a wide range of subjects, including programming, artificial intelligence, mathematics, science, history, business, and general knowledge, while receiving clear, structured, and context-aware explanations tailored from beginner to advanced levels.
 
 At the heart of ShikshaAI is **Tina**, an intelligent AI tutor designed to create the experience of interacting with a real teacher. Tina communicates naturally with users through realistic voice conversations and expressive avatar animations, making learning more human, interactive, and engaging. She is capable of understanding and responding fluently in **English, Hindi, and Telugu**, allowing learners to interact comfortably in their preferred language. Regardless of the language spoken by Tina, all educational content displayed on the platform—including explanations, key points, summaries, examples, tables, and images—is presented in **English** to maintain consistency and improve technical vocabulary and comprehension.
